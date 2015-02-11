@@ -49,7 +49,7 @@ classdef PlotP2 < matlab.mixin.Copyable
             end
             nTriEle = nP2ele*np^2;
             if nTriEle>30000
-                warning('PLOTP2:manyelements',['Number of generates triangular elements is high (',num2str(nTriEle),')!'])
+                warning('PLOTP2:manyelements',['Number of generates triangular elements is too damn high (',num2str(nTriEle),')!'])
             end
             H.xnod = X(:,1); H.ynod = X(:,2); H.znod = X(:,3);
             dx=1/np;
